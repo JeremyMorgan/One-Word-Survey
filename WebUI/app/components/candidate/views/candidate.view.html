@@ -1,0 +1,39 @@
+<div class="jumbotron row-eq-height">
+
+    <div class="col-md-4 column">
+    </div>
+    <div class="col-md-8 column">
+
+        <div id="question" ng-hide="ctrl.answered">
+
+            <h3>Use one word to describe</h3>
+            <h2>
+                {{ctrl.SubjectName}}
+            </h2>
+            <div class="input-group">
+            <img src="assets/img/{{ctrl.SubjectPageImage}}" alt="One word to describe {{ctrl.SubjectName}}">
+            <p>{{ctrl.SubjectText}}</p>
+                <div class="form-group">
+                    <label for="inputlg">One word to describe {{ctrl.SubjectName}}:</label>
+                    <input class="form-control input-lg" id="inputlg" type="text" ng-model="ctrl.AnswerText">
+                    <button class="btn btn-primary full-width" ng-click="ctrl.submitAnswer(ctrl.SubjectId)">
+                        <p>SEND ME YOUR ANSWER</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="answer" ng-show="ctrl.answered">
+        <h3>Thank you!</h3>
+            <h4>Your word to describe {{ctrl.SubjectName}} was : {{ctrl.AnswerText}}</h4>
+
+            <h3>Share this with your friends, see what they say!</h3>
+
+            <a href="https://twitter.com/share" class="twitter-share-button"{count} data-text="What is one word you'd use to describe Donald Trump? --> " data-via="JeremyCMorgan" data-size="large">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+        </div>
+
+    </div>
+    <div class="col-md-4 column">
+    </div>
+</div>

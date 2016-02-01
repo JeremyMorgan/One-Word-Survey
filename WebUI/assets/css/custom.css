@@ -1,0 +1,17 @@
+body {
+    /* Generated with http://gradient.quasi.ink */
+    background-size: cover;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAYAAACXU8ZrAAAAsUlEQVQIWw3GPU4CQRiA4feb/TObXUKgNibaUEABpUexpqGi8QycgYJLSMI55AIaKWgwMewCw8Iw8+FTPfI2GOtjnfGajXC1ZZ384HOPlxt1csXGV2T+PNNe/sTy/MlXvCGJDU49R3MhLQsi55GP/kJXfs33ww5NIkKwqDEYl9Jtt/irdsj7y1S3nT02CFYaPBc0QBpHFKakOlXIZDjR3+jAKSiqDQi4m6eTtzi7Bvv/O+KcTxFbpjawAAAAAElFTkSuQmCC");
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+.full-width {
+    width: 100%;
+    height: 50px;
+
+}
